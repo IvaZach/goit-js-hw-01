@@ -11,7 +11,6 @@
 // };
 // const keys = [];
 // const values = [];
- 
 
 // for (const key in apartment){
 
@@ -32,13 +31,11 @@
 // apartment.price = 2153;
 
 // for (const key in apartment) {
-   
 
 //   if(apartment.hasOwnProperty(key)){
 //     keys.push(key);
 //     values.push(apartment[key]);}
 
-  
 // }
 
 // console.log(keys);
@@ -62,7 +59,7 @@
 
 // ------------------------
 // function countProps(object) {
-   
+
 //   let propCount = 0;
 
 //   for (const key in object) {
@@ -72,12 +69,12 @@
 //   }
 
 //   return propCount;
-  
+
 // }
 // ________________________________
 
 // function countProps(object) {
-   
+
 //   let propCount = 0;
 
 //  const keys=Object.keys(object);
@@ -86,7 +83,7 @@
 
 //  console.log(propCount)
 //   return propCount;
-  
+
 // }
 
 // -----------------------
@@ -97,7 +94,7 @@
 //   price: 2153,
 // };
 // const values = [];
- 
+
 // const keys = Object.keys(apartment);
 
 // console.log(keys)
@@ -111,7 +108,6 @@
 
 // function countTotalSalary(salaries) {
 //   let totalSalary = 0;
-   
 
 //  const keys = Object.keys(salaries)
 //  console.log(keys)
@@ -119,7 +115,7 @@
 //   console.log(salaries[key])
 //   totalSalary +=salaries[key]
 //  }
-  
+
 //   return totalSalary;
 // }
 // console.log(countTotalSalary({ mango: 100, poly: 150, alfred: 80 }))
@@ -174,7 +170,7 @@
 // ];
 
 // function getAllPropValues(propName) {
-   
+
 // let items = []
 
 // for (let i=0; i<products.length; i +=1){
@@ -217,12 +213,10 @@
 //   today: 26,
 //   tomorrow: 33,
 // };
- 
 
 // const yesterday = highTemperatures.yesterday;
 // const today = highTemperatures.today;
 // const tomorrow = highTemperatures.tomorrow;
-
 
 // const meanTemperature = (yesterday + today + tomorrow) / 3;
 // // ______________
@@ -231,10 +225,9 @@
 //   today: 26,
 //   tomorrow: 33,
 // };
- 
+
 // const{ yesterday, today, tomorrow } = highTemperatures
 
-    
 // const meanTemperature = (yesterday + today + tomorrow) / 3;
 // __________________
 
@@ -243,11 +236,9 @@
 //   today: 26,
 //   tomorrow: 33,
 // };
- 
 
 // const {yesterday , today, tomorrow , icon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg" } = highTemperatures;
 
-    
 // const meanTemperature = (yesterday + today + tomorrow) / 3;
 // ---------------
 
@@ -256,10 +247,9 @@
 //   today: 26,
 //   tomorrow: 33,
 // };
- 
+
 // const {yesterday: highYesterday, today: highToday, tomorrow: highTomorrow, icon: highIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg" } = highTemperatures;
 
-    
 // const meanTemperature = (highYesterday + highToday + highTomorrow) / 3;
 // ________________
 
@@ -272,7 +262,6 @@
 
 // const hexColors = [];
 // const rgbColors = [];
- 
 
 // for (const color of colors) {
 //   hexColors.push(color.hex);
@@ -289,7 +278,6 @@
 
 // const hexColors = [];
 // const rgbColors = [];
- 
 
 // for (const {hex , rgb} of colors) {
 //   hexColors.push(hex);
@@ -308,7 +296,6 @@
 //     high: 31,
 //   },
 // };
- 
 
 // const highToday = forecast.today.high;
 // const lowToday = forecast.today.low;
@@ -330,7 +317,7 @@
 //     high: 31,
 //   },
 // };
- 
+
 // const {
 //   today: {
 //     low: lowToday,
@@ -352,7 +339,6 @@
 //   const tomorrowLow = forecast.tomorrow.low;
 //   const tomorrowHigh = forecast.tomorrow.high;
 
-  
 //   return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
 // }
 // _____________
@@ -366,19 +352,19 @@
 //  }
 // _____________
 // const scores = [89, 64, 42, 17, 93, 51, 26];
- 
+
 // const bestScore = scores;
 // const worstScore = scores;
 // ____________
 // const scores = [89, 64, 42, 17, 93, 51, 26];
- 
+
 // const bestScore = Math.max(...scores);
 // const worstScore = Math.min(...scores);
 // ----------------
 // const firstGroupScores = [64, 42, 93];
 // const secondGroupScores = [89, 14, 51, 26];
 // const thirdGroupScores = [29, 47, 18, 97, 81];
- 
+
 // const allScores = [];
 // const bestScore = allScores;
 // const worstScore = allScores;
@@ -386,7 +372,7 @@
 // const firstGroupScores = [64, 42, 93];
 // const secondGroupScores = [89, 14, 51, 26];
 // const thirdGroupScores = [29, 47, 18, 97, 81];
- 
+
 // const allScores = [...firstGroupScores, ...secondGroupScores, ...thirdGroupScores];
 // const bestScore = Math.max(...allScores);
 // const worstScore = Math.min(...allScores);
@@ -403,7 +389,7 @@
 //   withPassword: true,
 //   timePerQuestion: 30,
 // };
- 
+
 // const finalSettings = { ...defaultSettings, ...overrideSettings};
 // ---------------
 
@@ -411,7 +397,7 @@
 //   const completed = false;
 //   const category = "General";
 //   const priority = "Normal";
-   
+
 //   return { ...{ category, priority, completed }, ...data };
 // }
 
@@ -480,7 +466,7 @@
 //     matches.push(firstArgs[i])
 //   }
 // }
-  
+
 //   return matches;
 // }
 // console.log(findMatches([10, 24, 41, 6, 9, 19], 24, 11, 9, 23, 41))
@@ -489,7 +475,7 @@
 // console.log(findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7))
 
 // const bookShelf = {
-   
+
 //   books: ["The last kingdom", "The guardian of dreams"],
 //   getBooks() {
 //     return "Returning all books";
@@ -503,7 +489,7 @@
 //   updateBook(oldName, newName){
 //     return `Updating book ${oldName} to ${newName}`;
 //   },
-  
+
 // };
 // console.log(bookShelf.updateBook("Sands of dune", "Dune"))
 // console.log(bookShelf.removeBook("Red sunset"))
@@ -530,11 +516,11 @@
 // _________________
 // const atTheOldToad = {
 //   potions: ["Speed potion", "Dragon breath", "Stone skin"],
-   
+
 //   getPotions(){
 //     return this.potions
 //   }
-  
+
 // };
 // ______________
 // const atTheOldToad = {
@@ -578,7 +564,7 @@
 //     { name: "Dragon breath", price: 780 },
 //     { name: "Stone skin", price: 520 },
 //   ],
-   
+
 //   getPotions() {
 //     return this.potions;
 //   },
@@ -607,7 +593,7 @@
 
 //     this.potions.splice(potionIndex, 1, newName);
 //   },
-  
+
 // // };
 // преобразовано ниже
 
@@ -618,7 +604,7 @@
 //     { name: "Dragon breath", price: 780 },
 //     { name: "Stone skin", price: 520 },
 //   ],
-   
+
 //   getPotions() {
 //       return this.potions;
 //     },
@@ -651,7 +637,7 @@
 //          }
 //       }
 //     }
-  
+
 // };
 
 // ______________________
@@ -682,7 +668,6 @@
 //             }
 //             return onOrderError(`There is no pizza with a name ${pizzaName} in the assortment.`);},
 //   };
-  
 
 //   // Callback for onSuccess
 //   function makePizza(pizzaName) {
@@ -702,13 +687,11 @@
 // ------------------------
 // function calculateTotalPrice(orderedItems) {
 //   let totalPrice = 0;
-   
 
 //   for (let i = 0; i < orderedItems.length; i += 1) {
 //     totalPrice += orderedItems[i];
 //   }
 
-  
 //   return totalPrice;
 // }
 
@@ -729,7 +712,6 @@
 
 // function filterArray(numbers, value) {
 //   const filteredNumbers = [];
-   
 
 //   for (let i = 0; i < numbers.length; i += 1) {
 //     if (numbers[i] > value) {
@@ -760,7 +742,6 @@
 //
 // function getCommonElements(firstArray, secondArray) {
 //   const commonElements = [];
-   
 
 //   for (let i = 0; i < firstArray.length; i += 1) {
 //     if (secondArray.includes(firstArray[i])) {
@@ -769,12 +750,11 @@
 //   }
 
 //   return commonElements;
-  
+
 // }
 // ________________________________________
 // function getCommonElements(firstArray, secondArray) {
 //   const commonElements = [];
-   
 
 //   firstArray.forEach( function (first, i){
 // if (secondArray.includes(firstArray[i])) {
@@ -782,7 +762,7 @@
 //     }
 //   })
 //  return commonElements;
-  
+
 // }
 // console.log(getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]))
 // console.log(getCommonElements([9,7,8,7,18,6,7,18,23,9,20,15,8,7,12,9,21,10,21,21,11,14], [23,13,11,7,10,6,16,13,6,19,14,19,19,6,5,19,21,9,21,10,13,22]))
@@ -792,7 +772,7 @@
 // Change code below this line
 
 // function calculateTotalPrice(quantity, pricePerItem) {
-  
+
 //   return quantity * pricePerItem;
 // }
 // _______________________
@@ -823,7 +803,7 @@
 // }
 // console.log(calculateTotalPrice([12, 85, 37, 4]))
 // __________________
- 
+
 // function filterArray(numbers, value) {
 //   const filteredNumbers = [];
 
@@ -833,7 +813,6 @@
 //     }
 //   });
 
-  
 //   return filteredNumbers;
 // }
 // _______________________
@@ -849,7 +828,7 @@
 // }
 // console.log(filterArray([1, 2, 3, 4, 5], 3))
 // ______________________
- 
+
 // function getCommonElements(firstArray, secondArray) {
 //   const commonElements = [];
 
@@ -859,7 +838,6 @@
 //     }
 //   });
 
-  
 //   return commonElements;
 // }
 // ___________________
@@ -878,13 +856,13 @@
 // console.log(getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]))
 // // ___________________
 // function changeEven(numbers, value) {
-   
+
 //   for (let i = 0; i < numbers.length; i += 1) {
 //     if (numbers[i] % 2 === 0) {
 //       numbers[i] = numbers[i] + value;
 //     }
 //   }
-  
+
 // }
 // ___________________
 // const changeEven = (numbers, value) => {
@@ -897,18 +875,17 @@
 // console.log(changeEven([2, 8, 3, 7, 4, 6], 10))
 // ___________________
 // function changeEven(numbers, value) {
-   
+
 //   const newArray = []
 //   numbers.forEach(number =>  {
 //      number % 2 === 0 ? newArray.push(number + value) : newArray.push(number)
 //   })
 //   return newArray;
-  
+
 // }
 // console.log(changeEven([2, 8, 3, 7, 4, 6], 10))
 // ___________________
 // const planets = ["Earth", "Mars", "Venus", "Jupiter"];
- 
 
 // const planetsLengths = planets.map(element => element.length);
 // console.log(planetsLengths)
@@ -932,7 +909,6 @@
 //   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
 //   { title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
 // ];
- 
 
 // const titles = books.map(book => book.title);
 // console.log(titles)
@@ -1118,7 +1094,7 @@
 // console.log(getFriends(users))
 
 // const getActiveUsers = (users) => {
-//   return users.filter(user => user.isActive) 
+//   return users.filter(user => user.isActive)
 // };
 // console.log(getActiveUsers(users))
 
@@ -1227,27 +1203,26 @@
 // const firstArray = [26, 94, 36, 18];
 // const secondArray = [17, 61, 23];
 // const thirdArray = [17, 26, 94, 61, 36, 23, 18];
- 
 
 // const eachElementInFirstIsEven = firstArray.every(
-//  value => !(value%2) 
+//  value => !(value%2)
 // );
 // const eachElementInFirstIsOdd = firstArray.every(
-//   value => value%2 
+//   value => value%2
 //  );
 
 // const eachElementInSecondIsEven = secondArray.every(
-//   value => !(value%2) 
+//   value => !(value%2)
 //  );
 // const eachElementInSecondIsOdd = secondArray.every(
-//   value => value%2 
+//   value => value%2
 //  );
 
 // const eachElementInThirdIsEven = thirdArray.every(
-//   value => !(value%2) 
+//   value => !(value%2)
 //  );
 // const eachElementInThirdIsOdd = thirdArray.every(
-//   value => value%2 
+//   value => value%2
 //  );
 
 // console.log("1", eachElementInFirstIsEven)
@@ -1352,11 +1327,9 @@
 //   kiwi: 244
 // };
 // const playtimes = Object.values(players); // [1270, 468, 710, 244]
- 
 
 // const totalPlayTime = playtimes.reduce((acc, value) => acc + value, 0);
 
-    
 // const averagePlayTime = totalPlayTime / playtimes.length;
 // console.log(averagePlayTime)
 // __________________
@@ -1366,7 +1339,6 @@
 //   { name: "Ajax", playtime: 690, gamesPlayed: 3 },
 //   { name: "Kiwi", playtime: 241, gamesPlayed: 1 },
 // ];
- 
 
 // const totalAveragePlaytimePerGame = players.reduce((acc, player) => acc += player.playtime / player.gamesPlayed, 0);
 // console.log(totalAveragePlaytimePerGame)
@@ -1642,3 +1614,446 @@
 //    return users.filter(user => user.gender === gender).reduce((total, user)=> total + user.balance,0)
 // };
 // console.log(getTotalBalanceByGender(users, 'female'))
+// ______________________
+// const pizzaPalace = {
+//     pizzas: ["Supercheese", "Smoked", "Four meats"],
+//     // Change code below this line
+//     checkPizza(pizzaName) {
+//       return this.pizzas.includes(pizzaName);
+//     },
+//     order(pizzaName) {
+//       const isPizzaAvailable = this.checkPizza(pizzaName);
+
+//       if (!isPizzaAvailable) {
+//         return `Sorry, there is no pizza named «${pizzaName}»`;
+//       }
+
+//       return `Order accepted, preparing «${pizzaName}» pizza`;
+//     },
+//     // Change code above this line
+//   };
+
+//   console.log(pizzaPalace.checkPizza('rrrr'));
+//   console.log(pizzaPalace.order('fff'));
+// ------------------------------
+// const customer = {
+//   username: "Mango",
+//   balance: 24000,
+//   discount: 0.1,
+//   orders: ["Burger", "Pizza", "Salad"],
+//   // Change code below this line
+//   getBalance() {
+//     return this.balance;
+//   },
+//   getDiscount() {
+//     return this.discount;
+//   },
+//   setDiscount(value) {
+//     this.discount = value;
+//   },
+//   getOrders() {
+//     return this.orders;
+//   },
+//   addOrder(cost, order) {
+//     this.balance -= cost - cost * this.discount;
+//     this.orders.push(order);
+//   },
+//   // Change code above this line
+// };
+
+// customer.setDiscount(0.15);
+// console.log(customer.getDiscount()); // 0.15
+// customer.addOrder(5000, "Steak");
+// console.log(customer.getBalance()); // 19750
+// console.log(customer.getOrders()); // ["Burger", "Pizza", "Salad", "Steak"]
+// ------------------
+
+// const historyService = {
+//   orders: [
+//     { email: "jacob@hotmail.com", dish: "Burrito" },
+//     { email: "solomon@topmail.net", dish: "Burger" },
+//     { email: "artemis@coldmail.net", dish: "Pizza" },
+//     { email: "solomon@topmail.net", dish: "Apple pie" },
+//     { email: "jacob@hotmail.com", dish: "Taco" },
+//   ],
+//   // Change code below this line
+//   getOrdersLog() {
+//     return this.orders
+//       .map(order => `email: ${order.email} dish: ${order.dish}`)
+//       .join(" - ");
+//   },
+//   getEmails() {
+//     const emails = this.orders.map(order => order.email);
+//     const uniqueEmails = new Set(emails);
+//     return [...uniqueEmails];
+//   },
+//   getOrdersByEmail(email) {
+//     return this.orders.filter(order => order.email === email);
+//   },
+//   // Change code above this line
+// };
+// -----------------------------
+// const parent = {
+//   name: "Stacey",
+//   surname: "Moore",
+//   age: 54,
+//   heritage: "Irish",
+// };
+
+// const child = Object.create(parent);
+
+// child.name = "Jason";
+// child.age = 27;
+// --------------------
+// const ancestor = {
+//   name: "Paul",
+//   age: 83,
+//   surname: "Dawson",
+//   heritage: "Irish",
+// };
+
+// const parent = Object.create(ancestor);
+// parent.name = "Stacey";
+// parent.surname = "Moore";
+// parent.age = 54;
+
+// const child = Object.create(parent);
+// child.name = "Jason";
+// child.age = 27;
+// -----------------
+// class Car {
+//   constructor({ brand, model, price }) {
+//     this.brand = brand;
+//     this.model = model;
+//     this.price = price;
+//   }
+// }
+// const car = new Car({ brand: 'Audi', model: 'Q3', price: 36000 });
+// console.log(car);
+// --------------------
+// class Car {
+//   constructor({ brand, model, price }) {
+//     this.brand = brand;
+//     this.model = model;
+//     this.price = price;
+//   }
+//  getPrice(){
+//   return this.price;
+// }
+// changePrice(newPrice){
+//   this.price =  newPrice;
+// }
+// }
+// -----------------------
+// class Storage  {
+//   constructor (items){
+//     this.items = items
+//   }
+//   getItems(){
+//     return this.items;
+//   }
+//   addItem(newItem){
+//     this.items.push(newItem)
+//   }
+//   removeItem(itemToRemove){
+//     let index = this.items.indexOf(itemToRemove);
+//     if (index > -1) {
+//       return this.items.splice(index, 1);
+//     }
+//   }
+// }
+// // Change code above this line
+// const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
+// storage.addItem("Droid");
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
+// storage.removeItem("Prolonger");
+// console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
+// -------------------
+// class StringBuilder{
+//   constructor (value){
+//     this.value = value;
+//   }
+//   getValue(){
+//     return this.value
+//   }
+//   padEnd(str){
+//     this.value=this.value + str
+//   }
+//   padStart(str){
+//     this.value=str+this.value
+//   }
+//   padBoth(str){
+//     this.value=str + this.value+str
+//   }
+// }
+// const builder = new StringBuilder(".");
+// console.log(builder.getValue()); // "."
+// builder.padStart("^");
+// console.log(builder.getValue()); // "^."
+// builder.padEnd("^");
+// console.log(builder.getValue()); // "^.^"
+// builder.padBoth("=");
+// console.log(builder.getValue()); // "=^.^="
+// -----------------------
+// class Car {
+//   #brand;
+//   constructor({ brand, model, price }) {
+//     this.#brand = brand;
+//     this.model = model;
+//     this.price = price;
+//   }
+//   getBrand() {
+//     return this.#brand;
+//   }
+//   changeBrand(newBrand) {
+//     this.#brand = newBrand;
+//   }
+// }
+// ----------------------
+// class Storage {
+//   #items
+//   constructor(items) {
+//     this.#items = items;
+//   }
+//   getItems() {
+//     return this.#items;
+//   }
+//   addItem(newItem) {
+//     this.#items.push(newItem);
+//   }
+//   removeItem(itemToRemove) {
+//     this.#items = this.#items.filter(item => item !== itemToRemove);
+//   }
+// }
+// const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
+// storage.addItem("Droid");
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
+// storage.removeItem("Prolonger");
+// console.log(storage.getItems()); // ["Нанитоиды", "Антигравитатор", "Droid"]
+// -------------------
+// class StringBuilder {
+//  #value
+//   constructor(initialValue) {
+//     this.#value = initialValue;
+//   }
+
+//   getValue() {
+//     return this.#value
+//   }
+
+//   padEnd(str) {
+//     this.#value += str;
+//   }
+
+//   padStart(str) {
+//     this.#value = str + this.#value;
+//   }
+
+//   padBoth(str) {
+//     this.padStart(str);
+//     this.padEnd(str);
+//   }
+// }
+// const builder = new StringBuilder(".");
+// console.log(builder.getValue()); // "."
+// builder.padStart("^");
+// console.log(builder.getValue()); // "^."
+// builder.padEnd("^");
+// console.log(builder.getValue()); // "^.^"
+// builder.padBoth("=");
+// console.log(builder.getValue()); // "=^.^="
+// ------------------
+// class Car {
+//   #brand;
+//   #model;
+//   #price;
+
+//   constructor({ brand, model, price }) {
+//     this.#brand = brand;
+//     this.#model = model;
+//     this.#price = price;
+//   }
+
+//   get brand() {
+//     return this.#brand;
+//   }
+
+//   set brand(newBrand) {
+//     this.#brand = newBrand;
+//   }
+
+//   get model() {
+//     return this.#model;
+//   }
+
+//   set model(newModel) {
+//     this.#model = newModel;
+//   }
+
+//   get price() {
+//     return this.#price;
+//   }
+
+//   set price(newPrice) {
+//     this.#price = newPrice;
+//   }
+// }
+// --------------------
+// class Car {
+//   // Change code below this line
+//   static MAX_PRICE = 50000.00;
+  
+//   #price;
+
+//   constructor({ price }) {
+//     this.#price = price;
+//   }
+
+//   get price() {
+//     return this.#price;
+//   }
+
+//   set price(newPrice) {
+//     if (newPrice <= Car.MAX_PRICE)
+//     this.#price = newPrice;
+//   }
+//   // Change code above this line
+// }
+
+// const audi = new Car({ price: 35000 });
+// console.log(audi.price); // 35000
+
+// audi.price = 49000;
+// console.log(audi.price); // 49000
+
+// audi.price = 51000;
+// console.log(audi.price); // 49000
+// -------------------
+// class Car {
+//   static #MAX_PRICE = 50000;
+//    static checkPrice(price){
+//     if(price >= Car.#MAX_PRICE){
+//       return `Error! Price exceeds the maximum`  }
+//     else{
+//       return `Success! Price is within acceptable limits`
+//     }}
+//     constructor({ price }) {
+//     this.price = price;
+//   }
+// }
+
+// const audi = new Car({ price: 36000 });
+// const bmw = new Car({ price: 64000 });
+
+// console.log(Car.checkPrice(audi.price)); // "Success! Price is within acceptable limits"
+// console.log(Car.checkPrice(bmw.price)); // "Error! Price exceeds the maximum"
+// ---------------------------
+// class User {
+//   constructor(email) {
+//     this.email = email;
+//   }
+
+//   get email() {
+//     return this.email;
+//   }
+
+//   set email(newEmail) {
+//     this.email = newEmail;
+//   }
+// }
+// class Admin extends User{
+//   static AccessLevel = { BASIC: "basic", SUPERUSER: "superuser" }
+// }
+// // -------------------
+// class User {
+//   email;
+
+//   constructor(email) {
+//     this.email = email;
+//   }
+
+//   get email() {
+//     return this.email;
+//   }
+
+//   set email(newEmail) {
+//     this.email = newEmail;
+//   }
+// }
+
+// class Admin extends User {
+
+//   static AccessLevel = {
+//     BASIC: "basic",
+//     SUPERUSER: "superuser",
+//   };
+//   constructor({email, accessLevel}){
+//     super(email);
+//     this.accessLevel = accessLevel;
+//   }
+
+// }
+
+// const mango = new Admin({
+//   email: "mango@mail.com",
+//   accessLevel: Admin.AccessLevel.SUPERUSER,
+// });
+
+// console.log(mango.email); // "mango@mail.com"
+// console.log(mango.accessLevel); // "superuser"
+// -------------------
+// class User {
+//   email;
+
+//   constructor(email) {
+//     this.email = email;
+//   }
+
+//   get email() {
+//     return this.email;
+//   }
+
+//   set email(newEmail) {
+//     this.email = newEmail;
+//   }
+// }
+// class Admin extends User {
+//   // Change code below this line
+
+//   static AccessLevel = {
+//     BASIC: "basic",
+//     SUPERUSER: "superuser",
+//   };
+
+//   constructor({ email, accessLevel, blacklistedEmails}) {
+//     super(email);
+//     this.accessLevel = accessLevel;
+//     this.blacklistedEmails = []
+//   }
+//   blacklist(email){
+//     this.blacklistedEmails.push(email);
+//   }
+//   isBlacklisted(email){
+//     if(this.blacklistedEmails.includes(email)){
+//       return true
+//     } else {
+//       return false
+//     }
+//   }
+//   // Change code above this line
+// }
+
+// const mango = new Admin({
+//   email: "mango@mail.com",
+//   accessLevel: Admin.AccessLevel.SUPERUSER,
+// });
+
+// console.log(mango.email); // "mango@mail.com"
+// console.log(mango.accessLevel); // "superuser"
+
+// mango.blacklist("poly@mail.com");
+// console.log(mango.blacklistedEmails); // ["poly@mail.com"]
+// console.log(mango.isBlacklisted("mango@mail.com")); // false
+// console.log(mango.isBlacklisted("poly@mail.com")); // true
